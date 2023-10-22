@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Wrapper = styled.View`
+export const Wrapper = styled.Pressable`
   width: 100%;
   padding: 16px;
   padding-top: 12px;

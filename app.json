@@ -26,9 +26,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "experiments": {
-      "tsconfigPaths": true
-    },
     "plugins": [
       [
         "onesignal-expo-plugin",
@@ -39,6 +36,9 @@
     ],
     "extra": {
       "oneSignalAppId": "286ee1c4-3e9a-4682-966d-065c29c024c8"
+    },
+    "experiments": {
+      "tsconfigPaths": true
     }
   }
 }

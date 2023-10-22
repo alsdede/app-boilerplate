@@ -1,4 +1,11 @@
+import { OSNotification } from 'react-native-onesignal';
+
 export type NotificationProps = {
-  title: string;
+  data: OSNotification;
   onClose: () => void;
+};
+
+export type AdditionalDataProps = {
+  route?: 'details';
+  game_id?: string;
 };
