@@ -1,8 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+import * as S from './styles';
 
 const Main = () => {
-  return <View />;
+  return <S.Wrapper></S.Wrapper>;
 };
 
 export default Main;

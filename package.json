@@ -9,15 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/roboto": "^0.2.3",
     "expo": "~49.0.15",
     "expo-constants": "~14.4.2",
     "expo-dev-client": "~2.4.11",
+    "expo-font": "~11.4.0",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
     "onesignal-expo-plugin": "^2.0.2",
     "react": "18.2.0",
     "react-native": "0.72.6",
-    "react-native-onesignal": "^5.0.2"
+    "react-native-onesignal": "^5.0.2",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
