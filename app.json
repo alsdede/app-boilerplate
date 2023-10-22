@@ -15,19 +15,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.betesports"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.betesports"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "experiments":{
-      "tsconfigPaths":true
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ]
+    ],
+    "extra": {
+      "oneSignalAppId": "286ee1c4-3e9a-4682-966d-065c29c024c8"
     }
   }
 }
