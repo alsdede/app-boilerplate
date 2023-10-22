@@ -7,6 +7,19 @@ import { handleForegroundNotification } from '@/utils/notifications';
 
 import AppRoutes from './app.routes';
 
+const linking = {
+  prefixes: ['betesports://', 'com.betesports://', 'exp+betesports://'],
+  config: {
+    screens: {
+      details: {
+        path: 'details/:gameId',
+        parse: {
+          gameId: (gameId: string) => gameId,
+        },
+      },
+    },
+  },
+};
 const Routes = () => {
   const [notification, setNotification] = useState<OSNotification>();
   // NOTIFICATION EFFECT
@@ -20,7 +33,7 @@ const Routes = () => {
   // NOTIFICATION EFFECT
 
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking}>
       <AppRoutes />
       {notification?.title && (
         <Notification onClose={() => setNotification(undefined)} data={notification} />
